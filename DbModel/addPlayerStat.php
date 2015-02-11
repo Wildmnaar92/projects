@@ -20,7 +20,22 @@ $sql_link = new mysqli("localhost", "nba_admin", "nba", "nba");
                 <h1>Add an Nba Player</h1>
                 
                 <h3> Name</h3>
-                <input type="text" name="Name"/>
+                    <?php
+                        $query =  sprintf( "SELECT id, name FROM player_info ORDER BY name ASC");
+
+                        $players = mysqli_query($sql_link, $query);
+
+                    ?>
+
+                <select name="player_id">
+                    <?php foreach($players as $player):?>        
+                        <option value="<?php echo $player['id'];?>"><?php echo $player['name'];?></option>
+                    <?php endforeach;?>
+
+                    
+                    
+                </select>
+                
                 <h3> Points</h3>
                 <input type="number" step="any" name ="totalPoints"/>
                  <h3> All Time Field Goal Percentage</h3>

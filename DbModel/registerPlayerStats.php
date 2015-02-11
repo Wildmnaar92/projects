@@ -16,20 +16,10 @@
    $sql_link = new mysqli("localhost", "nba_admin","nba", "nba"); 
 
 
-$name = mysqli_escape_string($sql_link, $_POST["Name"]);
 
-$query =  sprintf( "SELECT id FROM player_info WHERE name LIKE ''%%%s%%'", $name);
+$player_id = $_POST['player_id'];
 
-$playerValue = mysqli_query($sql_link, $query);
-
-$playerId = $playerValue[0];
-   
-  foreach ($playerValue as $playerHolder): 
 ?>
-
-    <h4> <?php echo $playerId = $playerHolder["name"]?></h4>
-
-      <?php endforeach;?>
             
 
 
@@ -53,7 +43,7 @@ $ft_percentage = mysqli_escape_string($sql_link, $_POST["ft_percentage"]);
 
 
  $query = sprintf("INSERT INTO player_stats (player_id, points,fg_percentage,3p_percentage,2p_percentage,ft_percentage,trb,assists,blocks,steals,turnovers) 
-VALUES ('%d', '%d', '%d','%d','%d','%d','%d','%d','%d','%d','%d')", $playerId, $points,          $fg_percentage,$threep_percentage,$twop_percentage,$ft_percentage,$rebounds,$assists,$blocks,$steals,$turnovers);
+VALUES ('%d', '%d', '%d','%d','%d','%d','%d','%d','%d','%d','%d')", $player_id, $points,          $fg_percentage,$threep_percentage,$twop_percentage,$ft_percentage,$rebounds,$assists,$blocks,$steals,$turnovers);
 
 $result = mysqli_query($sql_link, $query);
 

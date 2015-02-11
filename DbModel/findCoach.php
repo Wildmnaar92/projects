@@ -81,12 +81,9 @@ $teamArray = array(
           
           $query = sprintf( "SELECT * FROM coach WHERE team_id LIKE '%s'", $id);
           
-          }
           
-          else {
-          $query = "SELECT * FROM coach";
           
-          }
+         
            
             $result = mysqli_query($sql_link, $query);
     
@@ -100,12 +97,12 @@ $teamArray = array(
       <?php endforeach;?>
             
         
-      
+    <?php    } ?>
         
         </body>
     
     <footer>
         <br>
-    <a href="index.html">Home</a></li> 
+    <a href="index.html">Home</a>
     </footer>
         </html>
