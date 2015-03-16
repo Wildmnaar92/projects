@@ -1,0 +1,64 @@
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif; 
+    
+    display: flex;
+    flex-flow: column nowrap;
+     background-color: white; 
+   
+}
+
+img {
+ width: 15%;
+    height: 30%;
+    align-self: center;
+}
+
+.title {
+    
+
+ align-self: center;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+    margin-bottom: 0;
+    margin-top: 2%;
+ 
+
+  display: table;
+  height: auto;
+
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 7em;
+ /* font-family: 'Open Sans', sans-serif;*/
+  font-weight: 300;
+    font-style: italic;
+
+  letter-spacing: -0.02em;
+  line-height: 1.2em;
+    
+    text-shadow: 5px 5px 5px white; 
+}
+
+.questions_background {
+  background-color:#CCCCFF;
+    width: 100%;
+    /*padding:2.5% 4% 4% 4%*/
+    
+   
+}
+
+.all_the_cards {
+
+    width: 60%;
+align-self: center;
+    position: relative;
+     padding-left: 20%;
+    border-top-color: black;
+     
+    
+}
+
