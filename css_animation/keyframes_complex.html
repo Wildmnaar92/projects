@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+        .soccer-area {
+            width: 452px;
+            height: 684px;
+            background: url(img/soccer_field.svg);
+            background-size: 452px 684px;
+            position: relative;
+        }
+        .ball {
+            top: 18px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            border-radius: 50%;
+            position: inherit;
+            transition: all 1s ease-in;
+            -webkit-animation: ballMove 1s;
+            }
+            
+                
+            
+      @-webkit-keyframes ballMove {
+          0% {
+            top: 18px;
+            left: 10px;
+              
+          }
+          25% {
+            top: 150px;
+            left: 260px;
+          }
+          50% {
+            top: 60px;
+            left: 160px;
+          }
+          100% {
+            top: 10px;
+            left: 210px;
+          }
+        }
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="soccer-area">
+        <div class="ball"></div>
+        </div>
+
+    </body>
+</html>

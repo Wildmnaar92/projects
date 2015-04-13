@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            
+            
+/*
+        @-webkit-keyframes YOUR-ANIMATION {
+        }
+        @-moz-keyframes YOUR-ANIMATION {
+        }
+        @-o-keyframes YOUR-ANIMATION {
+        }
+        @keyframes YOUR-ANIMATION {
+        }
+            
+            
+         Animation with Separate properties
+            
+      
+         animation-name: bounce;
+         animation-duration: 4s;
+         animation-iteration-count: 10;
+         animation-direction: alternate;
+         animation-timing-function: ease-out;
+         animation-fill-mode: forwards;
+         animation-delay: 2s;
+
+            
+*/
+            
+            
+            
+          
+        @-webkit-keyframes sunMove {
+          0% {
+/*            transform: scale(0.1);*/
+              top: 10px;
+            opacity: 0;
+          }
+          60% {
+/*            transform: scale(1.2);*/
+            opacity: 1;
+              top: 200px;
+          }
+          100% {
+/*            transform: scale(1);*/
+              top: 10px;
+              opacity: 0;
+          }
+        }
+        .sky {
+            width: 500px;
+            height: 400px;
+            background: skyblue;
+            position: relative;
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            -webkit-animation: sunMove 5s infinite;
+            -moz-animation: sunMove 5s infinite;
+            animation: sunMove 5s infinite;
+        }
+            
+/*animation: [animation-name] [animation-duration] [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction] [animation-fill-mode] [animation-play-state];*/
+            
+        </style>
+    </head>
+    <body>
+        <div class="sky">
+        <div class="sun"></div>
+        </div>
+
+
+    </body>
+</html>

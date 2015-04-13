@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            
+
+        .sky {
+            width: 500px;
+            height: 400px;
+            background: skyblue;
+            position: relative;
+            overflow: hidden;
+        }
+            
+         html:hover .sun {
+	         transform: rotate(180deg);
+             background: orange;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffcc00;
+            position: relative;
+            top: 390px;
+            transition: all 1s;
+            transform-origin: 250% center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="sky">
+        <div class="sun"></div>
+        
+        </div>
+
+
+   
+    </body>
+</html>

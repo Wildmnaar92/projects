@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <style>
+        .soccer-area {
+            width: 452px;
+            height: 684px;
+            background: url(img/soccer_field.svg);
+            background-size: 452px 684px;
+            position: relative;
+        }
+        .ball {
+            top: 18px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            border-radius: 50%;
+            position: inherit;
+        }
+        .player {
+            color: yellow;
+            position: inherit;
+        }
+        .ronaldo {
+            top: 10px;    
+            left: 10px;
+        } 
+        .kaka {
+            top: 50px;    
+            left: 160px;
+        }
+        .fred {
+            top: 90px;    
+            left: 260px;
+        }
+        </style>
+        <script src="js/vendor/velocity.js"></script>
+        
+    </head>
+    <body>
+
+        <div class="soccer-area">
+        <div class="ball"></div>
+        <div class="player ronaldo">Ronaldo</div>
+        <div class="player kaka">Kaka</div>
+        <div class="player fred">Fred</div>
+        </div>
+<script src="js/main.js"></script>
+    </body>
+</html>
